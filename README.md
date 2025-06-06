@@ -5,11 +5,11 @@ También es responsive para poder verla/usarla en dispositivos móviles.
 
 ## Características
 
--Interfaz interactiva
--Funciones básica de una calculadora(+,-,*,/).
--Botón de borrado (<-) para eliminar el útimo carácter.
--Botón de limpieza (c) para reiniciar el contenido de la pantalla.
--Evaluación automática de expresiones con el botón =.
+- Interfaz interactiva
+- Funciones básica de una calculadora(+,-,*,/).
+- Botón de borrado (<-) para eliminar el útimo carácter.
+- Botón de limpieza (c) para reiniciar el contenido de la pantalla.
+- Evaluación automática de expresiones con el botón =.
 
 ### Código principal
 
