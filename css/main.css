@@ -6,50 +6,73 @@
 }
 body{
     min-height: 100vh;
-    background-color: #090c14;
+    background-color: rgb(228, 216, 216);
     display: grid;
     place-items: center;
 }
 .calculadora {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     background-color: grey;
-    color: white;
+    color: black;
     display: grid;
     gap: .2rem;
     border-radius: .8rem;
-    /*sirve para ubicar la cantidad de columnas y darle forma*/
-    grid-template-columns: repeat(4,1fr);
     width: 300px;
     padding: 1.5rem;
+    box-shadow: 5px 10px 0px 5px;
+    border-radius: 30px;
 }
 .pantalla {
-    background-color: #090c14 ;
+    grid-column: 1 / -1;
+    background-color: rgb(226, 217, 217) ;
     padding: 1.5rem;
     font-size: 2rem;
     border-radius: .5rem;
-    grid-column: 1 / 5;
     text-align: right;
     margin-bottom: 1rem;
     font-family: monospace;
 }
 .btn {
     background-color: grey;
-    color: white;
+    color: black;
     border: 0;
     padding: 1.5rem .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1.5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 10px 0px 5px;
+    border-radius: 10px;
 }
 .btn:hover {
-    background-color: #090c14;
+    background-color: white;
     cursor: pointer;
     border-radius: 0.5rem;
 }
-/*Le damos color al signo igual*/
+
+/*Le damos color al btn igual*/
 #igual {
     grid-row: span 2;
-    background-color: pink;
+    background-color: rgb(221, 68, 94);
     border-radius: 0.5rem;
+}
 
+/* Responsiva para móviles */
+
+@media (max-width: 400px) {
+    .calculadora {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .btn {
+        padding: 1rem 0.25rem;
+    }
+
+    .pantalla {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
 }
